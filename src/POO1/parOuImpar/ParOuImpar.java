@@ -1,5 +1,7 @@
 package POO1.parOuImpar;
 
+import java.util.Scanner;
+
 /**
  * Faça um programa que receba um número como entrada e informe ao usuário se
  * o número é impar ou par.
@@ -9,9 +11,11 @@ package POO1.parOuImpar;
 
 public class ParOuImpar {
     public static void main(String[] args) {
-        System.out.println(parOuImpar(2));
-        System.out.println(parOuImpar(7));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite um número: ");
+        int valor = sc.nextInt();
 
+        System.out.println(parOuImpar(valor));
     }
     public static String parOuImpar(int valor) {
         if (valor % 2 == 0) {
