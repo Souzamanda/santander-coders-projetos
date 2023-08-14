@@ -1,4 +1,4 @@
-package POO1.ex1;
+package POO1.pessoa;
 
 public class Main {
     public static void main(String[] args) {

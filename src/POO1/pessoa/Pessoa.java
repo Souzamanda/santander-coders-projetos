@@ -1,4 +1,4 @@
-package POO1.ex1;
+package POO1.pessoa;
 
 /**
  * Construa o código Java para definir um objeto do tipo pessoa que possui
