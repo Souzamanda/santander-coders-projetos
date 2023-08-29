@@ -5,4 +5,9 @@ public class Golfinho implements Nadador, Amamentador{
     public void movimentar() {
         nadar();
     }
+
+    @Override
+    public void nadar() {
+        System.out.println("Golfinho faz um salto e dispara nadando");;
+    }
 }
