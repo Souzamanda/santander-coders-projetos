@@ -11,12 +11,27 @@ public class SistemaDeSorteios {
         elementos.add("abacate");
         elementos.add("tomate");
         elementos.add("melancia");
-        Sorteador sorteador = new Sorteador(elementos);
+        elementos.add("melao");
+        elementos.add("carambola");
+        elementos.add("jaca");
+        Sorteador<String> sorteadorString = new Sorteador<>(elementos);
 
         /*while(!elementos.isEmpty()) {
             System.out.println("Elemento sorteado: " + sorteador.sortear());
         }*/
 
-        System.out.println(sorteador.agrupar(2));
+        List<Integer> elementosInt = new ArrayList<>();
+        elementosInt.add(1);
+        elementosInt.add(12);
+        elementosInt.add(5);
+        elementosInt.add(-8);
+        elementosInt.add(63);
+        elementosInt.add(853);
+        elementosInt.add(7);
+        elementosInt.add(6);
+        Sorteador<Integer> sorteadorInt = new Sorteador<>(elementosInt);
+
+        System.out.println(sorteadorString.agrupar(3));
+        System.out.println(sorteadorInt.agrupar(3));
     }
 }
