@@ -14,8 +14,7 @@ public class SistemaDeSorteios {
         elementos.add("melao");
         elementos.add("carambola");
         elementos.add("jaca");
-        Sorteador<String> sorteadorString = new Sorteador<>(elementos);
-        Agrupador<String> agrupadorString = new Agrupador<>(elementos, sorteadorString);
+        Agrupador<String> agrupadorString = new Agrupador<>(elementos);
 
         /*while(!elementos.isEmpty()) {
             System.out.println("Elemento sorteado: " + sorteador.sortear());
@@ -30,8 +29,7 @@ public class SistemaDeSorteios {
         elementosInt.add(853);
         elementosInt.add(7);
         elementosInt.add(6);
-        Sorteador<Integer> sorteadorInt = new Sorteador<>(elementosInt);
-        Agrupador<Integer> agrupadorInt = new Agrupador<>(elementosInt, sorteadorInt);
+        Agrupador<Integer> agrupadorInt = new Agrupador<>(elementosInt);
 
         System.out.println(agrupadorString.agrupar(3));
         System.out.println(agrupadorInt.agrupar(3));

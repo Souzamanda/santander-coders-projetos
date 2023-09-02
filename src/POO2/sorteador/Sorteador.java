@@ -20,5 +20,7 @@ public class Sorteador<T> {
         return elementos.remove(numeroSorteado);
     }
 
-
+    public boolean possuiElementos() {
+        return !elementos.isEmpty();
+    }
 }

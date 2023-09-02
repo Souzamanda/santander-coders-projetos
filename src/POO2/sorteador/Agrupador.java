@@ -4,15 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Agrupador<T> {
-    List<T> elementos;
-    Sorteador<T> sorteador;
+    private final Sorteador<T> sorteador;
+
+    public Agrupador(List<T> elementos) {
+        this.sorteador = new Sorteador<>(elementos);
+    }
 
     public List<Grupo<T>> agrupar(int numeroDeGruposEsperado) {
 
         List<Grupo<T>> grupos = inicializarGrupos(numeroDeGruposEsperado);
 
 
-        while(possuiElementos()) {
+        while(sorteador.possuiElementos()) {
             for(Grupo<T> grupo : grupos) {
                 grupo.adicionarNoGrupo(sorteador.sortear());
             }
@@ -30,7 +33,5 @@ public class Agrupador<T> {
         return grupos;
     }
 
-    private boolean possuiElementos() {
-        return !elementos.isEmpty();
-    }
+
 }
