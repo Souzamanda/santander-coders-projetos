@@ -14,38 +14,6 @@ public class Filme {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
-    public Date getDiaDeLancamento() {
-        return diaDeLancamento;
-    }
-
-    public void setDiaDeLancamento(Date diaDeLancamento) {
-        this.diaDeLancamento = diaDeLancamento;
-    }
-
-    public double getOrcamento() {
-        return orcamento;
-    }
-
-    public void setOrcamento(double orcamento) {
-        this.orcamento = orcamento;
-    }
-
-    public Diretor getDiretor() {
-        return diretor;
-    }
-
     public void setDiretor(Diretor diretor) {
         this.diretor = diretor;
     }
